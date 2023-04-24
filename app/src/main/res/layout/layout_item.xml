@@ -10,6 +10,7 @@
         android:padding="10dp"
         android:id="@+id/cardview"
         android:layout_margin="2dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
         app:cardCornerRadius="10dp"
         android:elevation="5dp">
 
@@ -18,19 +19,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/mainheading"
-                android:padding="5dp"
-                android:ellipsize="end"
-                android:maxLines="2"
-                android:textColor="@color/black"
-                android:text="Main heading display here main heading display here"
-                android:textSize="20sp"
-                android:textStyle="bold">
 
-            </TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,12 +31,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:id="@+id/mainheading"
+                    android:padding="5dp"
                     android:ellipsize="end"
                     android:maxLines="6"
-                    android:padding="5dp"
-                    android:id="@+id/content"
-                    android:textSize="15sp"
-                    android:text="Main content main content">
+                    android:textColor="@color/white"
+                    android:text="Main heading display here main heading display here"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -82,7 +73,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/time"
                 android:padding="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:text="Published at"
                 android:textStyle="bold"
                 android:textSize="12sp">

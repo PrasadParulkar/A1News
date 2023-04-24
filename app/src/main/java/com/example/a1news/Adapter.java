@@ -48,7 +48,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.mtime.setText("Publishet at:-"+modelClassArrayList.get(position).getPublishedAt());
         holder.mauthor.setText(modelClassArrayList.get(position).getAuthor());
         holder.mheading.setText(modelClassArrayList.get(position).getTitle());
-        holder.mcontent.setText(modelClassArrayList.get(position).getDesciption());
         Glide.with(context).load(modelClassArrayList.get(position).getUrlToImage()).into(holder.imageView);
 
     }

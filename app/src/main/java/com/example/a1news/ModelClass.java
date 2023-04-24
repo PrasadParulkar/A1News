@@ -2,13 +2,12 @@ package com.example.a1news;
 
 public class ModelClass {
 
-    private String author,title,desciption,url,urlToImage,publishedAt;
+    private String author,title,url,urlToImage,publishedAt;
 
 
     public ModelClass(String author, String title, String desciption, String url, String urlToImage, String publishedAt) {
         this.author = author;
         this.title = title;
-        this.desciption = desciption;
         this.url = url;
         this.urlToImage = urlToImage;
         this.publishedAt = publishedAt;
@@ -28,14 +27,6 @@ public class ModelClass {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getDesciption() {
-        return desciption;
-    }
-
-    public void setDesciption(String desciption) {
-        this.desciption = desciption;
     }
 
     public String getUrl() {
